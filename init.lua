@@ -3,7 +3,6 @@
 local use_sound = true
 
 
-
 local players = {}
 
 minetest.register_on_joinplayer(function(player)
