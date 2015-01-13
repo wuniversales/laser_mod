@@ -37,7 +37,7 @@ if use_sound == true then
 							-- stop sound after 0.4 seconds
 							minetest.after(0.4, function()
 								minetest.sound_stop(handle)
-								if players[player_name]
+								if players[player_name] then
 								    players[player_name]["soundToggle"] = 0
 								end
 							end)
