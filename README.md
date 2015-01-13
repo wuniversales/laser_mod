@@ -8,10 +8,10 @@
 
 This mod adds laser swords to minetest. They are powerful and cut through anything but wear out somewhat quickly. Default textures are 32x32. 16x16 textures are also included.
 
-0.3 update by vitaminx
+**0.3 update by vitaminx**
   - bugfix for server crash at player disconnect
 
-0.2 Updates by sirken
+**0.2 Updates by sirken**
   - Recreated graphics
   - 16px and 32px textures
   - Added more swords
@@ -19,4 +19,4 @@ This mod adds laser swords to minetest. They are powerful and cut through anythi
   - Changed recipes
   - Changed tool capabilities 
 
-0.1 by pagliaccio
+**0.1 by pagliaccio**
