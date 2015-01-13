@@ -11,7 +11,7 @@ This mod adds laser swords to minetest. They are powerful and cut through anythi
 **0.3 update by vitaminx**
   - bugfix for server crash at player disconnect
 
-**0.2 Updates by sirken**
+**0.2 updates by sirken**
   - Recreated graphics
   - 16px and 32px textures
   - Added more swords
@@ -19,4 +19,4 @@ This mod adds laser swords to minetest. They are powerful and cut through anythi
   - Changed recipes
   - Changed tool capabilities 
 
-**0.1 by pagliaccio**
+**0.1 initial release by pagliaccio**
