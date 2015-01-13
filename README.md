@@ -1,7 +1,7 @@
 [mod] Laser Sword [0.3]
 =======================
 
-**depends:** idefault
+**depends:** default
 
 **recommends:** 3d_armor (to see wielded weapons)
 
