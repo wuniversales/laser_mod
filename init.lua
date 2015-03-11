@@ -7,7 +7,7 @@ local use_sound = true
 local players = {}
 
 minetest.register_on_joinplayer(function(player)
-	player_name = player:get_player_name()
+	local player_name = player:get_player_name()
 	players[player_name] = {soundToggle = 0}
 end)
 
