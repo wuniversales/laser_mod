@@ -2,7 +2,8 @@
 -- To disable sounds, set it to anything else.
 local use_sound = true
 
-
+-- check for MineClone2
+local mcl = minetest.get_modpath("mcl_core")
 
 local players = {}
 
@@ -88,39 +89,76 @@ minetest.register_tool("laser_mod:yellow_sword", {
 	tool_capabilities = tc
 })
 
-minetest.register_craft({
-	output = 'laser_mod:red_sword',
-	recipe = {
-		{'default:glass'},
-		{'dye:red'},
-		{'default:mese_crystal'},
-	}
-})
+if mcl then
+    minetest.register_craft({
+        output = 'laser_mod:red_sword',
+        recipe = {
+            {'mcl_core:glass'},
+            {'mcl_dye:red'},
+            {'mcl_ocean:prismarine_crystals'},
+        }
+    })
 
-minetest.register_craft({
-	output = 'laser_mod:green_sword',
-	recipe = {
-		{'default:glass'},
-		{'dye:green'},
-		{'default:mese_crystal'},
-	}
-})
+    minetest.register_craft({
+        output = 'laser_mod:green_sword',
+        recipe = {
+            {'mcl_core:glass'},
+            {'mcl_dye:green'},
+            {'mcl_ocean:prismarine_crystals'},
+        }
+    })
 
-minetest.register_craft({
-	output = 'laser_mod:blue_sword',
-	recipe = {
-		{'default:glass'},
-		{'dye:blue'},
-		{'default:mese_crystal'},
-	}
-})
+    minetest.register_craft({
+        output = 'laser_mod:blue_sword',
+        recipe = {
+            {'mcl_core:glass'},
+            {'mcl_dye:blue'},
+            {'mcl_ocean:prismarine_crystals'},
+        }
+    })
 
-minetest.register_craft({
-	output = 'laser_mod:yellow_sword',
-	recipe = {
-		{'default:glass'},
-		{'dye:yellow'},
-		{'default:mese_crystal'},
-	}
-})
+    minetest.register_craft({
+        output = 'laser_mod:yellow_sword',
+        recipe = {
+            {'mcl_core:glass'},
+            {'mcl_dye:yellow'},
+            {'mcl_ocean:prismarine_crystals'},
+        }
+    })
+else
+    minetest.register_craft({
+        output = 'laser_mod:red_sword',
+        recipe = {
+            {'default:glass'},
+            {'dye:red'},
+            {'default:mese_crystal'},
+        }
+    })
 
+    minetest.register_craft({
+        output = 'laser_mod:green_sword',
+        recipe = {
+            {'default:glass'},
+            {'dye:green'},
+            {'default:mese_crystal'},
+        }
+    })
+
+    minetest.register_craft({
+        output = 'laser_mod:blue_sword',
+        recipe = {
+            {'default:glass'},
+            {'dye:blue'},
+            {'default:mese_crystal'},
+        }
+    })
+
+    minetest.register_craft({
+        output = 'laser_mod:yellow_sword',
+        recipe = {
+            {'default:glass'},
+            {'dye:yellow'},
+            {'default:mese_crystal'},
+        }
+    })
+end
